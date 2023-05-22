@@ -107,17 +107,7 @@ namespace InventoryBeginners.Controllers
         }
 
 
-        //public IActionResult Details(int id)
-        //{
-        //    PoHeader item = _Repo.GetItem(id);
-
-        //    ViewBag.ProductList = GetProducts();
-        //    ViewBag.SupplierList = GetSuppliers();
-        //    ViewBag.PoCurrencyList = GetPoCurrencies();
-        //    ViewBag.BaseCurrencyList = GetBaseCurrencies();
-
-        //    return View(item);
-        //}
+        
 
         private List<SelectListItem> GetProducts()
         {
@@ -203,13 +193,7 @@ namespace InventoryBeginners.Controllers
                 Text = sp.Name
             }).ToList();
 
-            //var defItem = new SelectListItem()
-            //{
-            //    Value = "",
-            //    Text = "----Select Base Currency ----"
-            //};
-
-            //lstCurrencies.Insert(0, defItem);
+          
 
             return lstCurrencies;
         }
